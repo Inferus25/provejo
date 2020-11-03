@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+	<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 		<style>
 p {
@@ -13,20 +14,22 @@ p {
 }
 </style>
 		<title>
-			Provejo!
+			Provejo!;
 		</title>
 	</head>
 	<body>
-		<p>Jen mia unua linio! Kaj la ĉapeloj funkcias!!!! :D</p>
+		<p id="kobaj">Jen mia unua linio! Kaj la ĉapeloj funkcias!!!! :D</p>
 		<ul>
 			<li>Jen unua ero de listo</li>
 			<li>Jen dua ero de listo</li>
 		</ul>
-		<button onclick="alert('asdhjfkl')">asdfhjkl</button>
+		<button id="buton">La buton</button><br>
 		<script>
-			alert('hehhehehehehe >:D')
+			document.getElementById("buton").onclick = function() {
+				document.getElementById("kobaj").innerHTML = "JEJJJJJ Dankon pro la vizito!"
+			}
 		</script>
-		<img src="file:///C:/Users/Moiso/Desktop/Moises/Bildoj/tumblr_ndx7f92cjU1rf3kd3o1_500.jpg" alt="Kara bildo">
-		<input type="text" placeholder="asdfhkl">
+		<img src="file:///C:/Users/Moiso/Desktop/Moises/Bildoj/tumblr_ndx7f92cjU1rf3kd3o1_500.jpg" alt="Kara bildo"><br>
+		<input type="color" placeholder="asdfhkl">
 	</body>
 </html>
