@@ -23,13 +23,16 @@ p {
 			<li>Jen unua ero de listo</li>
 			<li>Jen dua ero de listo</li>
 		</ul>
-		<button id="buton">La buton</button><br>
+		<button onclick="faruIon()" id="buton">La buton</button><br>
 		<script>
-			document.getElementById("buton").onclick = function() {
-				document.getElementById("kobaj").innerHTML = "JEJJJJJ Dankon pro la vizito!"
+			function faruIon(a) {
+				document.getElementById("kobaj").innerHTML = a
 			}
 		</script>
 		<img src="file:///C:/Users/Moiso/Desktop/Moises/Bildoj/tumblr_ndx7f92cjU1rf3kd3o1_500.jpg" alt="Kara bildo"><br>
-		<input type="color" placeholder="asdfhkl">
+		<form>
+			<input id="novTekst" type="text" placeholder="asdfhkl">
+			<input type="submit" value="Sendi!" action="faruIon(document.getElementById('novTekst').value)">
+		</form>
 	</body>
 </html>
